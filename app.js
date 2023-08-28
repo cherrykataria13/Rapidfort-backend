@@ -4,7 +4,7 @@ const multer = require('multer');
 const mime = require('mime-types');
 
 //Creating express application
-const app = express();0
+const app = express();
 const port = process.env.PORT || 3000;
 
 // Configure for file storage
