@@ -1,23 +1,25 @@
+//Importing necessary modules
 const express = require('express');
 const multer = require('multer');
 const mime = require('mime-types');
 
-const app = express();
+//Creating express application
+const app = express();0
 const port = process.env.PORT || 3000;
 
-// Set up Multer storage
+// Configure for file storage
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
 
-// Set up CORS to allow requests from any origin
+// Enables CORS for any origin
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   next();
 });
 
-// Route to handle file uploads
+// Handling file upload route
 app.post('/upload', upload.single('file'), (req, res) => {
   const uploadedFile = req.file;
 
@@ -34,11 +36,12 @@ app.post('/upload', upload.single('file'), (req, res) => {
   res.json({ message: 'File uploaded successfully.', fileInfo });
 });
 
+//This is to set default route
 app.get('/', (req, res) => {
   res.send('Welcome to backend');
 });
 
-// Start the server
+// Starting the server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
