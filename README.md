@@ -4,7 +4,9 @@
 ### Project Overview
 
 ### Project Link: 
-
+- Project Repository: https://github.com/cherrykataria13/Rapidfort-backend
+- Frontend Repository: https://github.com/cherrykataria13/Frontend
+- Deployed Live project: https://main--taupe-cajeta-3b5dbf.netlify.app/
 
 ### Discription : 
 This project involves building a REST API-based web server for seamless file management. The primary goal is to create a user-friendly interface enabling easy file uploads while providing comprehensive insights about uploaded files. Clear API endpoints and REST methodology ensure smooth communication, supporting methods like GET and POST. The project also integrates CI/CD pipelines with Docker, automating application building, testing, and deployment. Furthermore, the implementation includes streamlined Docker container execution through bash scripts and explores Kubernetes deployment, configuring application management within a dynamic Kubernetes cluster.
@@ -45,10 +47,12 @@ Dockerfile
 - Define Kubernetes deployment and service configurations in `deployment.yaml` and `service.yaml`.
 - Deploy the backend to Kubernetes using `kubectl apply`.
 
-deployment.yaml
+deployment.yaml    
+
 ![deployment](image-2.png)
 
-service.yaml
+service.yaml    
+
 ![service](image-3.png)
 
 ### 4. Frontend Development
@@ -65,32 +69,4 @@ Display the name of the selected file.
 
 Retrivinfg information of the selected file by clicking upload button.
 ![File Infomation](image-6.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Endpoints: 
-
-Endpoint: /
-HTTP Method: GET
-Description of Endpoint: This endpoint is used to get the home page. It will return a welcome message along with links for all other endpoints in this project.
-
-File Upload:
-
-Endpoint: /upload
-HTTP Method: POST
-Description: This endpoint is used to get the page where we are going to upload a file to the server. The server undertakes processing of the received file and subsequently furnishes comprehensive insights regarding its attributes and details.
 
