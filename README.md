@@ -62,11 +62,11 @@ service.yaml
 - Interact with the hosted UI to upload files and retrieve information.
 
 File Upload : User can upload the file by clicking choose a file button.
-![Home page](image-4.png)
+![Home Page](image-7.png)
 
 Display the name of the selected file.
 ![Selected file](image-5.png)
 
 Retrivinfg information of the selected file by clicking upload button.
-![File Infomation](image-6.png)
+![File Information](image-8.png)
 
